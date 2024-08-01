@@ -1,0 +1,33 @@
+.container {
+    background-color: white; /* White background color */
+    border-radius: 15px; /* Match border radius */
+    border: 2px solid #333; /* Border color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+    padding: 20px; /* Same padding */
+    box-sizing: border-box; /* Ensure padding is included in width */
+  }
+  
+  .barChartContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between each bar */
+  }
+  
+  .barContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between label and bar */
+  }
+  
+  .barLabel {
+    flex: 1; /* Adjusts label width */
+    text-align: right; /* Align text to the right */
+    color: black; /* Text color */
+  }
+  
+  .bar {
+    height: 20px; /* Height of the bar */
+    background-color: #4CAF50; /* Bar color */
+    border-radius: 5px; /* Rounded corners for the bar */
+  }
+  

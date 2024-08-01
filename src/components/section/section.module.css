@@ -1,0 +1,50 @@
+.rectangleBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  width: calc(100vw - 64px);
+  height: 35vh;
+  margin-top: 20px;
+  margin-left: 32px;
+  background-color: rgba(98, 98, 98, 1);
+  border-radius: 15px;
+  border: 2px solid #333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden; /* Prevent overflow issues */
+}
+
+.walletExpensesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1; /* Ensure this container grows to fill available space */
+}
+
+.pieChartContainer {
+  width: 200px; /* Adjusted width */
+  height: 200px; /* Adjusted height */
+  display: flex;
+  justify-content: center; /* Center the pie chart horizontally */
+  align-items: center; /* Center the pie chart vertically */
+}
+
+@media (max-width: 767px) {
+  .rectangleBox {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .walletExpensesContainer {
+    gap: 10px; /* Adjust gap for smaller screens */
+  }
+
+  .pieChartContainer {
+    width: 150px; /* Adjusted width for smaller screens */
+    height: 150px; /* Adjusted height for smaller screens */
+    font-size: 12px; /* Adjust font size for smaller screens */
+    margin-top: 20px; /* Add margin on top for spacing */
+  }
+}

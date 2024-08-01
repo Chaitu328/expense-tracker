@@ -1,0 +1,94 @@
+.walletBalance {
+  background: var(--color-smallSection);
+  font-size: larger;
+  color: white;
+  width: 20rem;
+  height: 9rem;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  bottom: 60px;
+  left: 40px;
+}
+
+.balanceText {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: normal; /* Make the whole text normal weight */
+}
+
+.balanceAmount {
+  font-weight: bold; /* Make only the balance amount bold */
+  color: rgba(137, 225, 72, 1); /* Same color as the addIncomeButton */
+}
+
+.addIncomeButton {
+  background: linear-gradient(to bottom right, rgba(181, 220, 82, 1), rgba(137, 225, 72, 1));
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.addIncomeButton:hover {
+  background: linear-gradient(to bottom right, rgba(137, 225, 72, 1), rgba(181, 220, 82, 1));
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999; /* Ensure it's above other content */
+}
+
+.dialog {
+  background: linear-gradient(to bottom right, rgba(181, 220, 82, 1), rgba(137, 225, 72, 1));
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.dialog input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.addButton,
+.cancelButton {
+  padding: 10px 20px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.addButton {
+  background-color: rgba(244, 187, 74, 1);
+  color: white;
+}
+
+.cancelButton {
+  background-color: rgba(227, 227, 227, 1);
+  color: black;
+}
+
+.cancelButton:hover {
+  background-color: rgba(210, 210, 210, 1);
+}

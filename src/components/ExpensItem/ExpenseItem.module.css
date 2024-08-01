@@ -1,0 +1,50 @@
+.expenseItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+  }
+  
+  .expenseTitle {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .expenseAmount {
+    font-size: 16px;
+    color: #ff4d4d; /* Red color for expenses */
+  }
+  
+  .expenseDate {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .buttonGroup {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #0056b3;
+  }
+  
+  .deleteButton {
+    background-color: #dc3545;
+  }
+  
+  .deleteButton:hover {
+    background-color: #c82333;
+  }
+  

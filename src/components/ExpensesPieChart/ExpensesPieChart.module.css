@@ -1,0 +1,16 @@
+.pieChartContainer {
+  width: 200px; /* Adjusted width */
+  height: 200px; /* Adjusted height */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+@media (max-width: 767px) {
+  .pieChartContainer {
+    width: 150px;
+    height: 150px;
+    font-size: 12px;
+  }
+}
